@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+.wrapper {
+    background-color: #2A2A2A;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav__list {
+    display: flex;
+}
+.nav__item {
+    margin-right: 30px;
+}
+.nav__item:last-child {
+    margin: 0;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
