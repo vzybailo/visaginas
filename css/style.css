@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'NextReg';
+    src: url(../fonts/NEXT-ART_Regular.woff) format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NextSemBold';
+    src: url(../fonts/NEXT-ART_SemiBold.woff) format(woff);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NextBold';
+    src: url(../fonts/NEXT-ART_Bold.woff) format(woff);
+    font-weight: 700;
+    font-style: bold;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    background-color: #2A2A2A;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav__list {
+    display: flex;
+}
+.nav__item {
+    margin-right: 30px;
+}
+.nav__item:last-child {
+    margin: 0;
+}
+.nav__link {
+    font-family: 'Roboto';
+    color: #fff;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__title {
+    font-family: 'NextBold';
+    font-size: 72px;
+}
+
+/* socials sprite */
+ul.soc__list {
+    display: flex;
+    align-items: center;
+}
+.soc__item {
+    margin-right: 10px;
+}
+.soc__item:last-child {
+    margin-right: 0;
+}
+svg.soc__icon {
+    fill: #fff;
+    width: 32px;
+    height: 32px;
+    transition: .3s;
+}
+svg.soc__icon:hover {
+    fill: #00C4F0;
+}
