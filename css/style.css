@@ -24,6 +24,8 @@ body {
 }
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 a {
     text-decoration: none;
@@ -63,6 +65,76 @@ a {
     font-size: 72px;
 }
 
+/* about */
+section.about {
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    padding: 10% 0;
+}
+.skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.skills__item {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A2A2A;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 47%);
+    border-radius: 29px;
+    margin: 0 30px 30px 0;
+}
+.skills__item:nth-child(4) {
+    margin-right: 0;
+}
+.skills__img {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.me {
+    background: url('../img/Ellips.png') no-repeat;
+    background-size: contain;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.me__block {
+    width: 456px;
+    font-size: 20px;
+    background-color: #2C2C2C;
+    padding: 63px;
+    border-radius: 14px;
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+}
+.me__pic {
+    padding: 27px;
+    border-radius: 15px;
+    background: #2C2C2C;
+}
+.me__pic.first {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.me__pic.second {
+    position: absolute;
+    right: 0;
+}
+.me__pic.third {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
 /* socials sprite */
 ul.soc__list {
     display: flex;
@@ -83,3 +155,5 @@ svg.soc__icon {
 svg.soc__icon:hover {
     fill: #00C4F0;
 }
+
+    /* adaptive */
