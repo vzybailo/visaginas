@@ -1,3 +1,10 @@
+:root {
+    --colorBg: #2a2a2a;
+    --colorGrad: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    --mainFontSize: 16px;
+    --fontSizeTablet: 10px;
+}
+
 @font-face {
     font-family: 'NextReg';
     src: url(../fonts/NEXT-ART_Regular.woff) format(woff);
@@ -21,6 +28,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #fff;
+    font-size: var(--mainFontSize);
 }
 ul {
     list-style: none;
@@ -31,16 +39,21 @@ a {
     text-decoration: none;
 }
 .wrapper {
-    background-color: #2A2A2A;
+    background-color: var(--colorBg);
 }
 .container {
     width: 1200px;
     margin: 0 auto;
 }
-.nav__list {
+.title {
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.header .container .nav__list {
     display: flex;
 }
-.nav__item {
+.header .container .nav__item {
     margin-right: 30px;
 }
 .nav__item:last-child {
@@ -67,7 +80,7 @@ a {
 
 /* about */
 section.about {
-    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    background: var(--colorGrad);
     padding: 10% 0;
 }
 .skills__list {
@@ -83,7 +96,7 @@ section.about {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #2A2A2A;
+    background-color: var(--colorBg);
     box-shadow: 0px 4px 6px rgb(0 0 0 / 47%);
     border-radius: 29px;
     margin: 0 30px 30px 0;
@@ -135,6 +148,61 @@ section.about {
     left: 5%;
 }
 
+/* portfolio */
+.portfolio {
+    padding: 5% 0 8% 0;
+}
+.portfolio__cont {
+    text-align: center;
+}
+.portfolio__work {
+    display: flex;
+    padding: 50px;
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    box-shadow: 0px 4px 15px rgb(27 27 27 / 28%);
+    border-radius: 29px;
+}
+.portfolio__img {
+    margin-right: 80px;
+}
+.portfolio__title {
+    font-family: 'Arodora Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 25px;
+}
+.portfolio__text {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+a.portfolio__btn {
+    color: #E2A100;
+    font-size: 18px;
+}
+a.portfolio__btn:after {
+    content: url(../img/arrow.png);
+    width: 13px;
+    height: 8px;
+    margin-left: 7px;
+}
+/* footer */
+.footer{
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    padding: 3% 0;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .container .nav__item {
+    margin-bottom: 5px;
+}
+.footer .container .nav__item:last-child {
+    margin-bottom: 0;
+}
 /* socials sprite */
 ul.soc__list {
     display: flex;
@@ -157,3 +225,8 @@ svg.soc__icon:hover {
 }
 
     /* adaptive */
+@media screen and (max-width:768px) {
+    :root {
+        --mainFontSize: 10px;
+    }
+}
