@@ -1,0 +1,52 @@
+:root {
+    --colorBg: #2a2a2a;
+    --colorGrad: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    --mainFontSize: 16px;
+    --fontSizeTablet: 10px;
+}
+
+@font-face {
+    font-family: 'NextReg';
+    src: url(../fonts/NEXT-ART_Regular.woff) format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NextSemBold';
+    src: url(../fonts/NEXT-ART_SemiBold.woff) format(woff);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NextBold';
+    src: url(../fonts/NEXT-ART_Bold.woff) format(woff);
+    font-weight: 700;
+    font-style: bold;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: var(--mainFontSize);
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    background-color: var(--colorBg);
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.title {
+    @include title;
+}

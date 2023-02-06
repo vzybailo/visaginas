@@ -1,0 +1,15 @@
+// var
+$colorBg: #2a2a2a;
+$colorGrad: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+$mainFontSize: 16px;
+$fontSizeTablet: 10px;
+
+// layout
+@import './layout/_mixins.scss';
+@import './layout/_base.scss';
+
+// sections
+@import './sections/_hero.scss';
+@import './sections/_about.scss';
+@import './sections/_portfolio.scss';
+
