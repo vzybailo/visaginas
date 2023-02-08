@@ -3,3 +3,18 @@
     text-transform: uppercase;
     text-align: center;
 }
+@mixin mobile {
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (max-width: $desktop) {
+        @content;
+    }
+}

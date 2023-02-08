@@ -4,6 +4,11 @@ $colorGrad: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
 $mainFontSize: 16px;
 $fontSizeTablet: 10px;
 
+// adaptive 
+$mobile: 480px;
+$tablets: 768px;
+$desktop: 1200px;
+
 // layout
 @import './layout/_mixins.scss';
 @import './layout/_base.scss';

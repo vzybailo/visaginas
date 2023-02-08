@@ -46,6 +46,7 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
+    max-width: 100%;
 }
 .title {
     @include title;

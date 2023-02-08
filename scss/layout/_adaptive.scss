@@ -1,0 +1,44 @@
+@include mobile {
+    a.download {
+        color: #000;
+    }
+    a.download {
+        padding: 10px 20px;
+        color: #000;
+        background: orange;
+        border-radius: 25px;
+        font-weight: 700;
+        transition: .5s;
+        &:hover {
+            background: #fff;
+            color: #000;
+            transform: scale(1.2) rotate(10deg);
+        }
+    }
+    a.download {
+        padding: 10px 20px;
+        color: #000;
+        background: orange;
+        border-radius: 25px;
+        font-weight: 700;
+        transition: .5s;
+        &:hover {
+            background: #fff;
+            color: #000;
+            transform: scale(1.2) rotate(10deg);
+        }
+    }
+    a.download {
+        padding: 10px 20px;
+        color: #000;
+        background: orange;
+        border-radius: 25px;
+        font-weight: 700;
+        transition: .5s;
+        &:hover {
+            background: #fff;
+            color: #000;
+            transform: scale(1.2) rotate(10deg);
+        }
+    }
+}
